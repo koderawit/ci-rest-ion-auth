@@ -1,0 +1,7 @@
+CREATE TABLE users_digests (
+	id INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+	user_id INTEGER UNSIGNED NOT NULL UNIQUE,
+	digest_string VARCHAR(32),
+	PRIMARY KEY (id),
+	UNIQUE (user_id)
+	);

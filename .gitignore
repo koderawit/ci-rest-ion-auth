@@ -3,6 +3,11 @@
 application/cache/*
 !application/cache/index.html
 
+application/config/development
+application/config/local
+application/config/testing
+application/config/production
+
 application/logs/*
 !application/logs/index.html
 
