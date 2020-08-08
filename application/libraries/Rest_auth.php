@@ -27,6 +27,11 @@ class Rest_auth {
 
 		$user_digest = $this->app->user_digests->get_by_user_id($user_id);
 
+		if ( $user_digests !== FALSE )
+		{
+			$this->patch_to_app();
+		}
+
 		return $user_digest ? $user_digest->digest_string : FALSE;
 	}
 
